@@ -98,7 +98,6 @@ function verifyOtp(nohp, code) {
     if (registerAccount.data.token) {
         console.log(chalk.yellow(`    Successfully register account`))
         fs.appendFileSync("tokenTomoro.txt", `${registerAccount.data.token}\n`);
-
     } else {
         console.log(chalk.yellow(`    Failurer verify account`))
     }
